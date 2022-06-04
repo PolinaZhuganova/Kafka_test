@@ -22,15 +22,17 @@ public class BackMessageService implements MessageService {
 
 	@Override
 	public void send(MessageDto messageDto) {
-		log.info("<= sending {}", writeValueAsString(messageDto));
+		log.info("trying to send: ", writeValueAsString(messageDto));
 		kafkaStarshipTemplate.send("Data_Delivery", messageDto);
 	}
 
-// ответ в виде JSON как в task_with_token???
+
 	private String writeValueAsString(MessageDto dto) {
 		try {
+			log.info("writing value to JSON successful " + dto);
 			return objectMapper.writeValueAsString(dto);
 		} catch (JsonProcessingException e) {
+			log.debug("Writing value to JSON failed:" + dto);
 			e.printStackTrace();
 			throw new RuntimeException("Writing value to JSON failed: " + dto.toString());
 		}
