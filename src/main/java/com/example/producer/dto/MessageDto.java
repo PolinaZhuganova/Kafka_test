@@ -1,4 +1,4 @@
-package com.example.producer.messageDto;
+package com.example.producer.dto;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -10,7 +10,6 @@ import java.io.Serializable;
  */
 @Data
 public class MessageDto implements Serializable {
-
 	@ApiModelProperty(notes = "Текст передаваемого сообщения")
 	private String msgTxt;
 }

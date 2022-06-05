@@ -1,6 +1,6 @@
 package com.example.producer.config;
 
-import com.example.producer.messageDto.MessageDto;
+import com.example.producer.dto.MessageDto;
 import org.apache.kafka.common.serialization.LongSerializer;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;

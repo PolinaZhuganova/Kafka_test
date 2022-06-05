@@ -1,6 +1,6 @@
 package com.example.producer.service;
 
-import com.example.producer.messageDto.MessageDto;
+import com.example.producer.dto.MessageDto;
 
 /**
  * Класс MessageService

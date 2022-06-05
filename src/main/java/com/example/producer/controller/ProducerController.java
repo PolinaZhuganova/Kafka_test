@@ -1,6 +1,6 @@
 package com.example.producer.controller;
 
-import com.example.producer.messageDto.*;
+import com.example.producer.dto.*;
 import com.example.producer.service.MessageService;
 import io.swagger.annotations.*;
 import lombok.RequiredArgsConstructor;
@@ -23,8 +23,8 @@ public class ProducerController {
 		try {
 			log.info("message has been sent: " + dto);
 			messageService.send(dto);
-			return new ResponseDto("ok");
 
+			return new ResponseDto("ok");
 		} catch (Exception e) {
 			log.error("failed to send a message: " + dto);
 			return new ResponseDto("error");

@@ -1,4 +1,4 @@
-package com.example.producer.security;
+package com.example.producer.config;
 
 import com.example.producer.model.Role;
 import org.springframework.context.annotation.*;

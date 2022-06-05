@@ -1,6 +1,5 @@
 package com.example.producer.config;
 
-import com.example.producer.security.SecurityConfig;
 import org.springframework.context.annotation.*;
 
 /**
@@ -12,7 +11,6 @@ import org.springframework.context.annotation.*;
 @ComponentScan({
 	"com.example.producer.config",
 	"com.example.producer.controller",
-	"com.example.producer.security",
 	"com.example.producer.service",
 })
 public class ApplicationConfig {

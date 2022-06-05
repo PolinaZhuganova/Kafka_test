@@ -1,4 +1,4 @@
-package com.example.producer.messageDto;
+package com.example.producer.dto;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;

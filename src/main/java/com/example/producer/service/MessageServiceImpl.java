@@ -1,6 +1,6 @@
 package com.example.producer.service;
 
-import com.example.producer.messageDto.MessageDto;
+import com.example.producer.dto.MessageDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
