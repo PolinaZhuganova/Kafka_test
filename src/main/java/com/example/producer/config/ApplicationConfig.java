@@ -1,17 +1,19 @@
 package com.example.producer.config;
 
+import com.example.producer.security.SecurityConfig;
 import org.springframework.context.annotation.*;
 
 /**
  * Класс ApplicationConfig
  */
 @Configuration
-@Import(ProducerConfig.class)
+@Import({ProducerConfig.class, WebConfig.class, SwaggerConfig.class, SecurityConfig.class})
 @PropertySource({"classpath:kafka.properties"})
 @ComponentScan({
 	"com.example.producer.config",
 	"com.example.producer.controller",
-	"com.example.producer.service"
+	"com.example.producer.security",
+	"com.example.producer.service",
 })
 public class ApplicationConfig {
 }
